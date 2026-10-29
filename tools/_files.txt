@@ -56,6 +56,7 @@ tools/check_academic.py
 tools/check_doc.py
 tools/check_vault.py
 tools/check_vault2.py
+tools/comma_join.py
 tools/enum_prose.py
 tools/enum_safe.py
 tools/enum_steps.py
@@ -71,6 +72,7 @@ tools/final_style2.py
 tools/finalize_v2.py
 tools/fix_case4.py
 tools/fix_grammar.py
+tools/fix_semicolon.py
 tools/fix_style.py
 tools/fix_tone.py
 tools/harvest.py

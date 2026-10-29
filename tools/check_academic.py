@@ -55,6 +55,27 @@ CALLOUT = (r'<div class="(key|warn|def|note)"[^>]*>.*?</div>' + "|" +
            r'<ol class="enum">.*?</ol>')
 
 
+
+SEMI_SUB = ("这", "该", "其", "此", "因此", "所以", "因为", "由于", "虽然",
+            "如果", "当", "在")
+
+
+def semicolon_bad(para):
+    """分号只用于并列分句、多层复句的第一层与分项列举。
+
+    只有后一分句以指代或从属连词起头、明显依附于前一分句时，才判为误用。
+    """
+    segs = [x for x in para.split("；") if x.strip()]
+    if len(segs) < 2:
+        return []
+    bad = []
+    for i in range(len(segs) - 1):
+        r = segs[i + 1].strip()
+        if r.startswith(SEMI_SUB) and len(re.findall(r"[\u4e00-\u9fff]", r)) >= 12:
+            bad.append((segs[i][-12:], r[:12]))
+    return bad
+
+
 def visible_text(html, drop_callout=False):
     m = html[html.find("<main"):html.find("</main>")]
     if drop_callout:
@@ -146,6 +167,8 @@ def round_style(s, profile="textbook"):
         hard.append(("H6 emoji", m.group(0), ""))
 
     for para in paragraphs(visible_text(s)):
+        for pair in semicolon_bad(para):
+            hard.append(("H10 分号非并列", pair[0] + "｜" + pair[1], ""))
         segs = [x for x in para.split("；") if x.strip()]
         short = sum(1 for x in segs if len(re.findall(r"[\u4e00-\u9fff]", x)) < 20)
         if len(segs) >= 4 and short >= 2:
