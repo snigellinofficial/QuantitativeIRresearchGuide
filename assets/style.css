@@ -1,0 +1,337 @@
+/* ============================================================
+   地理信息与量化识别：排版样式
+   ============================================================ */
+
+:root{
+  --ink:#1c2434;
+  --ink-soft:#3a4459;
+  --grey:#6b7488;
+  --line:#dfe3ec;
+  --paper:#fbfbf9;
+  --card:#ffffff;
+  --blue:#2f5fb3;
+  --blue-wash:#eef2fb;
+  --red:#b3322f;
+  --red-wash:#fbeef0;
+  --green:#2e7d5b;
+  --green-wash:#e8f4ee;
+  --gold:#a9781a;
+  --gold-wash:#fbf3e2;
+  --sb: 300px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Han Serif SC","Noto Serif CJK SC","Songti SC",STSong,SimSun,Georgia,serif;
+  font-size:17px;
+  line-height:1.95;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* ---------------- 顶部进度与栏 ---------------- */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;background:transparent;z-index:60;}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--gold));transition:width .12s linear;}
+
+.topbar{
+  position:fixed;top:0;left:0;right:0;height:52px;z-index:55;
+  display:flex;align-items:center;gap:12px;
+  padding:0 20px;
+  background:rgba(251,251,249,.92);
+  backdrop-filter:saturate(1.6) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.tb-title{font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:14px;letter-spacing:.06em;color:var(--grey);}
+#menuBtn{
+  display:none;border:1px solid var(--line);background:var(--card);
+  width:34px;height:30px;border-radius:6px;color:var(--ink);cursor:pointer;font-size:15px;
+}
+
+/* ---------------- 侧栏 ---------------- */
+.sidebar{
+  position:fixed;top:52px;bottom:0;left:0;width:var(--sb);
+  overflow-y:auto;
+  padding:26px 22px 60px 28px;
+  border-right:1px solid var(--line);
+  background:var(--paper);
+  z-index:50;
+}
+.sb-label{
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:11px;letter-spacing:.22em;color:#9aa2b4;
+  margin:22px 0 8px;text-transform:uppercase;
+}
+.sb-label:first-child{margin-top:0;}
+/* 三级目录：一级粗体带色条，二级与三级逐级缩进并以细线串联 */
+.toc{list-style:none;margin:0;padding:0;line-height:1.5;}
+.toc a{text-decoration:none;display:block;border-radius:0 5px 5px 0;
+  transition:background .15s,color .15s,border-color .15s;}
+.toc>li.lv1{margin:7px 0 1px;}
+.toc>li.lv1>a{
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:12.8px;font-weight:700;color:var(--ink);
+  padding:6px 8px 6px 11px;
+  border-left:3px solid #d6dbe6;
+  letter-spacing:.01em;
+}
+.toc>li.lv1>a:hover{border-left-color:var(--blue);background:#f3f5fa;}
+.toc>li.lv1>a.active{border-left-color:var(--blue);background:var(--blue-wash);color:var(--blue);}
+.toc .sub{
+  list-style:none;margin:3px 0 9px;padding:1px 0 1px 13px;
+  border-left:1px solid #e6e9f1;
+}
+.toc .sub .lv2>a{
+  font-size:11.8px;color:var(--ink-soft);
+  padding:3px 8px 3px 9px;border-left:2px solid transparent;
+}
+.toc .sub .lv2>a:hover{color:var(--blue);border-left-color:#c3cfe8;}
+.toc .sub .lv3>a{
+  font-size:11.2px;color:#7a8398;
+  padding:2px 8px 2px 20px;border-left:2px solid transparent;
+}
+.toc .sub .lv3>a:hover{color:var(--blue);border-left-color:#cdd7ec;}
+.toc .sub a.active{color:var(--blue);background:var(--blue-wash);border-left-color:var(--blue);}
+.sb-note{margin:0;font-size:13px;}
+.sb-note a{color:var(--blue);text-decoration:none;}
+.sb-note a:hover{text-decoration:underline;}
+
+/* ---------------- 正文 ---------------- */
+.main{
+  margin-left:var(--sb);
+  padding:52px 0 120px;
+  max-width:100%;
+}
+.main>section{
+  max-width:780px;
+  margin:0 auto;
+  padding:46px 34px 10px;
+}
+
+h2{
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:25px;line-height:1.5;font-weight:700;
+  margin:34px 0 22px;
+  padding:2px 0 14px 16px;
+  border-left:7px solid var(--ink);
+  border-bottom:2px solid var(--ink);
+  letter-spacing:.01em;
+}
+h2 .num{
+  display:inline-block;
+  font-size:13px;font-weight:700;color:#fff;background:var(--ink);
+  padding:2px 9px;border-radius:4px;margin-right:12px;
+  vertical-align:3px;letter-spacing:.05em;
+}
+h3{
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:18px;font-weight:700;line-height:1.6;
+  margin:44px 0 14px;color:var(--ink);
+  padding:2px 0 2px 13px;
+  border-left:4px solid var(--blue);
+}
+h3::before{content:none;}
+h4{
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:15px;font-weight:700;margin:30px 0 10px;color:var(--ink-soft);
+  padding:1px 0 1px 11px;
+  border-left:4px solid var(--gold);
+}
+
+p{margin:0 0 18px;text-align:justify;text-justify:inter-ideograph;}
+strong{font-weight:700;color:#0f1726;background:linear-gradient(transparent 62%,rgba(184,134,11,.20) 62%);}
+em{font-style:normal;color:var(--blue);}
+
+/* ---------------- 公式 ---------------- */
+.eq{
+  position:relative;
+  margin:26px 0 20px;
+  padding:16px 62px 16px 20px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:3px solid var(--blue);
+  border-radius:4px;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+.eqno{
+  position:absolute;right:16px;top:16px;
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:12.5px;color:var(--grey);
+  letter-spacing:.02em;user-select:none;
+}
+.eq mjx-container[display="true"]{margin:0 !important;}
+mjx-container{font-size:105%;}
+
+/* ---------------- 表格 ---------------- */
+table{
+  width:100%;border-collapse:collapse;margin:20px 0 24px;
+  font-size:14.5px;line-height:1.7;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:4px;overflow:hidden;
+}
+table caption{
+  caption-side:top;text-align:left;
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:12.5px;color:var(--grey);
+  padding:0 0 8px;letter-spacing:.03em;
+}
+th{
+  background:#f2f4f9;color:var(--ink);
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-weight:700;font-size:13.5px;
+  text-align:left;padding:10px 12px;
+  border-bottom:1px solid var(--line);
+  white-space:nowrap;
+}
+td{padding:10px 12px;border-bottom:1px solid #eef0f5;vertical-align:top;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:#fafbfd;}
+table.sym td:first-child{white-space:nowrap;color:var(--blue);font-weight:600;}
+table.sym td:nth-child(2){white-space:nowrap;color:var(--grey);font-size:13.5px;}
+
+/* ---------------- 提示框 ---------------- */
+.key,.warn,.def,.note{
+  margin:26px 0;padding:16px 20px 16px 22px;
+  border-radius:4px;font-size:16px;line-height:1.85;
+  position:relative;
+}
+.key{background:var(--blue-wash);border-left:3px solid var(--blue);}
+.warn{background:var(--red-wash);border-left:3px solid var(--red);}
+.def{background:var(--green-wash);border-left:3px solid var(--green);}
+.note{background:var(--gold-wash);border-left:3px solid var(--gold);}
+.key strong,.warn strong,.def strong,.note strong{background:none;color:inherit;font-weight:700;}
+
+/* ---------------- 图 ---------------- */
+figure.fig{
+  margin:30px 0 30px;
+  padding:20px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:4px;
+  text-align:center;
+}
+figure.fig img{max-width:100%;height:auto;display:block;margin:0 auto;}
+figure.fig figcaption{
+  margin-top:14px;font-size:13px;line-height:1.75;color:var(--grey);
+  text-align:left;
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+}
+/* 图号已写入题注，此处不再自动加前缀 */
+
+/* 多面板宽图：桌面端破出正文栏，保证图内文字可读 */
+figure.fig.wide{position:relative;left:50%;transform:translateX(-50%);
+  width:calc(100vw - var(--sb) - 110px);max-width:1180px;}
+@media (max-width:1080px){
+  figure.fig.wide{position:static;left:auto;transform:none;width:auto;max-width:100%;}
+}
+
+/* ---------------- 步骤 ---------------- */
+ol.steps{counter-reset:st;list-style:none;padding:0;margin:22px 0;}
+ol.steps>li{
+  counter-increment:st;
+  position:relative;padding:2px 0 16px 46px;
+  border-left:1px dashed var(--line);
+  margin-left:14px;
+}
+ol.steps>li:last-child{border-left-color:transparent;padding-bottom:0;}
+ol.steps>li::before{
+  content:counter(st);
+  position:absolute;left:-14px;top:1px;
+  width:28px;height:28px;line-height:28px;text-align:center;
+  background:var(--ink);color:#fff;border-radius:50%;
+  font-family:"Microsoft YaHei",sans-serif;font-size:13px;font-weight:700;
+}
+ol.steps>li b{font-family:"Microsoft YaHei",sans-serif;}
+
+/* ---------------- 案例块 ---------------- */
+.case{
+  margin:34px 0;
+  border:1px solid var(--line);
+  border-top:3px solid var(--gold);
+  border-radius:4px;
+  background:var(--card);
+  padding:24px 26px 8px;
+}
+.case .case-head{
+  font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  font-size:17px;font-weight:700;margin:0 0 6px;
+}
+.case .case-meta{
+  font-size:12.5px;color:var(--grey);margin:0 0 20px;
+  font-family:"Microsoft YaHei",sans-serif;letter-spacing:.02em;
+}
+.case h4{margin-top:22px;}
+
+/* ---------------- 文献拆解区块 ----------------
+   字号更小、行距更松、色彩更淡；只有加粗的判定句与标签使用强调色。 */
+.trace{
+  margin:6px 0 26px -4px;
+  padding:2px 0 2px 16px;
+  border-left:1px dashed #e3e7f0;
+}
+.trace h4{font-size:14.2px;margin:26px 0 9px;border-left-width:3px;}
+.trace p{
+  font-size:14.6px;line-height:1.95;color:#3a4254;
+  margin:0 0 15px;text-align:justify;
+}
+.trace strong{
+  font-weight:700;color:#1b4fa8;background:none;
+}
+.trace table{font-size:12.4px;}
+.trace table th{font-size:12px;padding:8px 9px;}
+.trace table td{padding:7px 9px;}
+.trace table caption{font-size:11.6px;}
+.trace .eq{margin:18px 0;padding:12px 54px 12px 16px;background:#fcfcfe;}
+.trace .eqno{top:13px;font-size:11.5px;}
+.trace mjx-container{font-size:100%;}
+
+/* ---------------- 响应式 ---------------- */
+@media (max-width:1080px){
+  :root{--sb:0px;}
+  .sidebar{transform:translateX(-100%);transition:transform .22s ease;width:290px;}
+  .sidebar.open{transform:translateX(0);box-shadow:0 0 40px rgba(0,0,0,.13);}
+  #menuBtn{display:block;}
+  .main{margin-left:0;}
+  .main>section{padding:34px 20px 8px;}
+  body{font-size:16px;}
+}
+@media (max-width:520px){
+  h2{font-size:21px;}
+  h3{font-size:16.5px;}
+  table{font-size:13px;}
+  th,td{padding:8px 9px;}
+}
+
+/* ---------------- 打印 ---------------- */
+@media print{
+  .sidebar,.topbar,.progress{display:none;}
+  figure.fig.wide{position:static;left:auto;transform:none;width:auto;max-width:100%;}
+  .main{margin-left:0;}
+  .main>section{max-width:none;page-break-inside:auto;}
+  h2{page-break-after:avoid;}
+  figure.fig,.eq,table{page-break-inside:avoid;}
+  body{background:#fff;font-size:11pt;}
+}
+
+/* 并列项分行：为三步、四项一类枚举提供独立行与序数 */
+ol.enum{
+  list-style:none;counter-reset:en;margin:14px 0 18px;padding:0 0 0 6px;
+}
+ol.enum>li{
+  counter-increment:en;position:relative;
+  padding:2px 0 8px 30px;
+  font-size:16px;line-height:1.9;color:var(--ink);
+}
+ol.enum>li::before{
+  content:counter(en);position:absolute;left:0;top:3px;
+  width:20px;height:20px;line-height:20px;text-align:center;
+  background:var(--blue-wash);color:var(--blue);
+  border:1px solid #cfdaef;border-radius:3px;
+  font-family:"Microsoft YaHei",sans-serif;font-size:12px;
+}
+.trace ol.enum>li{font-size:14.6px;line-height:1.95;padding-bottom:7px;}

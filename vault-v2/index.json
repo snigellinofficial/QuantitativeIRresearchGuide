@@ -1,0 +1,1542 @@
+{
+ "generated": "2026-10-29",
+ "difficulty_legend": {
+  "1": "描述与多元回归",
+  "2": "面板固定效应与双重差分",
+  "3": "工具变量、断点、合成控制、份额移动",
+  "4": "网络模型、结构模型、机器学习与遥感测量",
+  "5": "方法学前沿：异质性稳健估计、空间推断、聚合偏差"
+ },
+ "topics": [
+  {
+   "id": "G",
+   "name": "地理、可达性与基础设施",
+   "count": 16,
+   "file": "01-G-地理与基础设施.md"
+  },
+  {
+   "id": "C",
+   "name": "冲突、资源与政治暴力",
+   "count": 13,
+   "file": "02-C-冲突与政治暴力.md"
+  },
+  {
+   "id": "S",
+   "name": "制裁、经济治国与全球价值链",
+   "count": 13,
+   "file": "03-S-制裁与经济治国.md"
+  },
+  {
+   "id": "I",
+   "name": "国际制度、援助与发展",
+   "count": 12,
+   "file": "04-I-国际制度与援助.md"
+  },
+  {
+   "id": "N",
+   "name": "网络、依赖与等级",
+   "count": 11,
+   "file": "05-N-网络与等级.md"
+  },
+  {
+   "id": "L",
+   "name": "气候、迁移与灾害",
+   "count": 11,
+   "file": "06-L-气候迁移与灾害.md"
+  },
+  {
+   "id": "F",
+   "name": "测量、机器学习与前沿",
+   "count": 12,
+   "file": "07-F-测量与机器学习.md"
+  },
+  {
+   "id": "M",
+   "name": "方法论基石",
+   "count": 12,
+   "file": "08-M-方法论基石.md"
+  }
+ ],
+ "papers": [
+  {
+   "id": "G01",
+   "short": "Henderson 等 2012",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2012,
+   "venue": "American Economic Review",
+   "note": "notes/G01-henderson.md",
+   "links": [
+    "F07",
+    "F12",
+    "G16"
+   ]
+  },
+  {
+   "id": "G02",
+   "short": "Dell 2010",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2010,
+   "venue": "Econometrica",
+   "note": "notes/G02-dell.md",
+   "links": [
+    "C12",
+    "G07",
+    "G08",
+    "G10"
+   ]
+  },
+  {
+   "id": "G03",
+   "short": "Donaldson & Hornbeck 2016",
+   "topic": "G",
+   "difficulty": 4,
+   "year": 2016,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/G03-donaldson.md",
+   "links": [
+    "G10",
+    "G12",
+    "G15",
+    "L06",
+    "S09"
+   ]
+  },
+  {
+   "id": "G04",
+   "short": "Baum-Snow 2007",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2007,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/G04-baum-snow.md",
+   "links": [
+    "G05",
+    "G06",
+    "G09",
+    "G14",
+    "S13"
+   ]
+  },
+  {
+   "id": "G05",
+   "short": "Faber 2014",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2014,
+   "venue": "The Review of Economic Studies",
+   "note": "notes/G05-faber.md",
+   "links": [
+    "G04",
+    "G06",
+    "G09",
+    "G14"
+   ]
+  },
+  {
+   "id": "G06",
+   "short": "Banerjee 等 2020",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2020,
+   "venue": "Journal of Development Economics",
+   "note": "notes/G06-banerjee.md",
+   "links": [
+    "G04",
+    "G05",
+    "G11",
+    "G12",
+    "S13"
+   ]
+  },
+  {
+   "id": "G07",
+   "short": "Michalopoulos & Papaioannou 2013",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2013,
+   "venue": "Econometrica",
+   "note": "notes/G07-michalopoulos.md",
+   "links": [
+    "C12",
+    "G02",
+    "G08",
+    "G10"
+   ]
+  },
+  {
+   "id": "G08",
+   "short": "Michalopoulos & Papaioannou 2014",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2014,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/G08-michalopoulos.md",
+   "links": [
+    "C12",
+    "G02",
+    "G07",
+    "G10"
+   ]
+  },
+  {
+   "id": "G09",
+   "short": "Dinkelman 2011",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2011,
+   "venue": "American Economic Review",
+   "note": "notes/G09-dinkelman.md",
+   "links": [
+    "C03",
+    "G04",
+    "G05",
+    "G14"
+   ]
+  },
+  {
+   "id": "G10",
+   "short": "Ahlfeldt 等 2015",
+   "topic": "G",
+   "difficulty": 4,
+   "year": 2015,
+   "venue": "Econometrica",
+   "note": "notes/G10-ahlfeldt.md",
+   "links": [
+    "G02",
+    "G03",
+    "G07",
+    "G08"
+   ]
+  },
+  {
+   "id": "G11",
+   "short": "Asher & Novosad 2020",
+   "topic": "G",
+   "difficulty": 2,
+   "year": 2020,
+   "venue": "American Economic Review",
+   "note": "notes/G11-asher.md",
+   "links": [
+    "G06",
+    "G12",
+    "G13",
+    "M03"
+   ]
+  },
+  {
+   "id": "G12",
+   "short": "Burgess 等 2015",
+   "topic": "G",
+   "difficulty": 2,
+   "year": 2015,
+   "venue": "American Economic Review",
+   "note": "notes/G12-burgess.md",
+   "links": [
+    "G03",
+    "G06",
+    "G11",
+    "G15"
+   ]
+  },
+  {
+   "id": "G13",
+   "short": "Jedwab & Moradi 2016",
+   "topic": "G",
+   "difficulty": 2,
+   "year": 2016,
+   "venue": "Review of Economics and Statistics",
+   "note": "notes/G13-jedwab.md",
+   "links": [
+    "F10",
+    "G11",
+    "L09"
+   ]
+  },
+  {
+   "id": "G14",
+   "short": "Lipscomb 等 2013",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2013,
+   "venue": "American Economic Journal: Applied Economics",
+   "note": "notes/G14-lipscomb.md",
+   "links": [
+    "C03",
+    "G04",
+    "G05",
+    "G09"
+   ]
+  },
+  {
+   "id": "G15",
+   "short": "Müller-Crepon 2020",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2020,
+   "venue": "Journal of Conflict Resolution",
+   "note": "notes/G15-müller-crepon.md",
+   "links": [
+    "G03",
+    "G12",
+    "S13"
+   ]
+  },
+  {
+   "id": "G16",
+   "short": "Hodler & Raschky 2014",
+   "topic": "G",
+   "difficulty": 3,
+   "year": 2014,
+   "venue": "Quarterly Journal of Economics",
+   "note": "notes/G16-hodler.md",
+   "links": [
+    "C09",
+    "G01",
+    "S08"
+   ]
+  },
+  {
+   "id": "C01",
+   "short": "Fearon & Laitin 2003",
+   "topic": "C",
+   "difficulty": 1,
+   "year": 2003,
+   "venue": "American Political Science Review",
+   "note": "notes/C01-fearon.md",
+   "links": [
+    "C08",
+    "I03",
+    "M12",
+    "S03"
+   ]
+  },
+  {
+   "id": "C02",
+   "short": "Gleditsch 等 2002",
+   "topic": "C",
+   "difficulty": 1,
+   "year": 2002,
+   "venue": "Journal of Peace Research",
+   "note": "notes/C02-gleditsch.md",
+   "links": [
+    "C04",
+    "C05",
+    "C08",
+    "C10"
+   ]
+  },
+  {
+   "id": "C03",
+   "short": "Miguel 等 2004",
+   "topic": "C",
+   "difficulty": 3,
+   "year": 2004,
+   "venue": "Journal of Political Economy",
+   "note": "notes/C03-miguel.md",
+   "links": [
+    "C11",
+    "C13",
+    "G09",
+    "G14"
+   ]
+  },
+  {
+   "id": "C04",
+   "short": "Raleigh 等 2010",
+   "topic": "C",
+   "difficulty": 1,
+   "year": 2010,
+   "venue": "Journal of Peace Research",
+   "note": "notes/C04-raleigh.md",
+   "links": [
+    "C02",
+    "C05",
+    "C10",
+    "F10"
+   ]
+  },
+  {
+   "id": "C05",
+   "short": "Sundberg & Melander 2013",
+   "topic": "C",
+   "difficulty": 1,
+   "year": 2013,
+   "venue": "Journal of Peace Research",
+   "note": "notes/C05-sundberg.md",
+   "links": [
+    "C02",
+    "C04",
+    "C10",
+    "L09"
+   ]
+  },
+  {
+   "id": "C06",
+   "short": "Hegre 等 2001",
+   "topic": "C",
+   "difficulty": 1,
+   "year": 2001,
+   "venue": "American Political Science Review",
+   "note": "notes/C06-hegre.md",
+   "links": [
+    "I01",
+    "L08",
+    "L10",
+    "S04"
+   ]
+  },
+  {
+   "id": "C07",
+   "short": "Dube & Vargas 2013",
+   "topic": "C",
+   "difficulty": 3,
+   "year": 2013,
+   "venue": "The Review of Economic Studies",
+   "note": "notes/C07-dube.md",
+   "links": [
+    "C09",
+    "C11",
+    "S02",
+    "S03"
+   ]
+  },
+  {
+   "id": "C08",
+   "short": "Cederman 等 2011",
+   "topic": "C",
+   "difficulty": 2,
+   "year": 2011,
+   "venue": "American Political Science Review",
+   "note": "notes/C08-cederman.md",
+   "links": [
+    "C01",
+    "C02",
+    "I12"
+   ]
+  },
+  {
+   "id": "C09",
+   "short": "Berman 等 2017",
+   "topic": "C",
+   "difficulty": 3,
+   "year": 2017,
+   "venue": "American Economic Review",
+   "note": "notes/C09-berman.md",
+   "links": [
+    "C07",
+    "F11",
+    "G16",
+    "S08"
+   ]
+  },
+  {
+   "id": "C10",
+   "short": "Tollefsen 等 2012",
+   "topic": "C",
+   "difficulty": 1,
+   "year": 2012,
+   "venue": "Journal of Peace Research",
+   "note": "notes/C10-tollefsen.md",
+   "links": [
+    "C02",
+    "C04",
+    "C05"
+   ]
+  },
+  {
+   "id": "C11",
+   "short": "Bazzi & Blattman 2014",
+   "topic": "C",
+   "difficulty": 3,
+   "year": 2014,
+   "venue": "American Economic Journal: Macroeconomics",
+   "note": "notes/C11-bazzi.md",
+   "links": [
+    "C03",
+    "C07",
+    "S02",
+    "S03"
+   ]
+  },
+  {
+   "id": "C12",
+   "short": "Sanchez de la Sierra 2020",
+   "topic": "C",
+   "difficulty": 3,
+   "year": 2020,
+   "venue": "Journal of Political Economy",
+   "note": "notes/C12-sanchez-de-la-sierra.md",
+   "links": [
+    "G02",
+    "G07",
+    "G08",
+    "L09"
+   ]
+  },
+  {
+   "id": "C13",
+   "short": "Ash & Obradovich 2020",
+   "topic": "C",
+   "difficulty": 2,
+   "year": 2020,
+   "venue": "Journal of Conflict Resolution",
+   "note": "notes/C13-ash.md",
+   "links": [
+    "C03",
+    "L11",
+    "S04"
+   ]
+  },
+  {
+   "id": "S01",
+   "short": "Farrell & Newman 2019",
+   "topic": "S",
+   "difficulty": 1,
+   "year": 2019,
+   "venue": "International Security",
+   "note": "notes/S01-farrell.md",
+   "links": [
+    "N06",
+    "S09",
+    "S11",
+    "S12"
+   ]
+  },
+  {
+   "id": "S02",
+   "short": "Fajgelbaum 等 2020",
+   "topic": "S",
+   "difficulty": 2,
+   "year": 2020,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/S02-fajgelbaum.md",
+   "links": [
+    "C07",
+    "C11",
+    "S03",
+    "S05"
+   ]
+  },
+  {
+   "id": "S03",
+   "short": "Amiti 等 2019",
+   "topic": "S",
+   "difficulty": 2,
+   "year": 2019,
+   "venue": "Journal of Economic Perspectives",
+   "note": "notes/S03-amiti.md",
+   "links": [
+    "C01",
+    "C07",
+    "C11",
+    "S02"
+   ]
+  },
+  {
+   "id": "S04",
+   "short": "Ilzetzki 等 2019",
+   "topic": "S",
+   "difficulty": 2,
+   "year": 2019,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/S04-ilzetzki.md",
+   "links": [
+    "C06",
+    "C13",
+    "I01",
+    "L11"
+   ]
+  },
+  {
+   "id": "S05",
+   "short": "Gopinath 等 2020",
+   "topic": "S",
+   "difficulty": 3,
+   "year": 2020,
+   "venue": "American Economic Review",
+   "note": "notes/S05-gopinath.md",
+   "links": [
+    "S02",
+    "S06",
+    "S07",
+    "S08"
+   ]
+  },
+  {
+   "id": "S06",
+   "short": "Morgan 等 2014",
+   "topic": "S",
+   "difficulty": 1,
+   "year": 2014,
+   "venue": "Conflict Management and Peace Science",
+   "note": "notes/S06-morgan.md",
+   "links": [
+    "S05",
+    "S07",
+    "S08",
+    "S10"
+   ]
+  },
+  {
+   "id": "S07",
+   "short": "Benguria 等 2022",
+   "topic": "S",
+   "difficulty": 2,
+   "year": 2022,
+   "venue": "Journal of International Economics",
+   "note": "notes/S07-benguria.md",
+   "links": [
+    "S05",
+    "S06",
+    "S10"
+   ]
+  },
+  {
+   "id": "S08",
+   "short": "Crozet & Hinz 2020",
+   "topic": "S",
+   "difficulty": 2,
+   "year": 2020,
+   "venue": "Economic Policy",
+   "note": "notes/S08-crozet.md",
+   "links": [
+    "C09",
+    "G16",
+    "S05",
+    "S06"
+   ]
+  },
+  {
+   "id": "S09",
+   "short": "Ahn & Ludema 2020",
+   "topic": "S",
+   "difficulty": 4,
+   "year": 2020,
+   "venue": "European Economic Review",
+   "note": "notes/S09-ahn.md",
+   "links": [
+    "G03",
+    "N08",
+    "S01",
+    "S11"
+   ]
+  },
+  {
+   "id": "S10",
+   "short": "Kelley & Simmons 2019",
+   "topic": "S",
+   "difficulty": 1,
+   "year": 2019,
+   "venue": "International Organization",
+   "note": "notes/S10-kelley.md",
+   "links": [
+    "I05",
+    "S06",
+    "S07"
+   ]
+  },
+  {
+   "id": "S11",
+   "short": "Chen 2023",
+   "topic": "S",
+   "difficulty": 4,
+   "year": 2023,
+   "venue": "International Security",
+   "note": "notes/S11-chen.md",
+   "links": [
+    "S01",
+    "S09",
+    "S12"
+   ]
+  },
+  {
+   "id": "S12",
+   "short": "Cha 2023",
+   "topic": "S",
+   "difficulty": 1,
+   "year": 2023,
+   "venue": "International Security",
+   "note": "notes/S12-cha.md",
+   "links": [
+    "F02",
+    "S01",
+    "S11"
+   ]
+  },
+  {
+   "id": "S13",
+   "short": "Petry 2022",
+   "topic": "S",
+   "difficulty": 1,
+   "year": 2022,
+   "venue": "European Journal of International Relations",
+   "note": "notes/S13-petry.md",
+   "links": [
+    "G04",
+    "G06",
+    "G15"
+   ]
+  },
+  {
+   "id": "I01",
+   "short": "Alesina & Dollar 2000",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 2000,
+   "venue": "Journal of Economic Growth",
+   "note": "notes/I01-alesina.md",
+   "links": [
+    "C06",
+    "I03",
+    "L10",
+    "S04"
+   ]
+  },
+  {
+   "id": "I02",
+   "short": "Abbott & Snidal 2000",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 2000,
+   "venue": "International Organization",
+   "note": "notes/I02-abbott.md",
+   "links": [
+    "F02",
+    "I05",
+    "I09",
+    "I11"
+   ]
+  },
+  {
+   "id": "I03",
+   "short": "Nielson & Tierney 2003",
+   "topic": "I",
+   "difficulty": 2,
+   "year": 2003,
+   "venue": "International Organization",
+   "note": "notes/I03-nielson.md",
+   "links": [
+    "C01",
+    "I01",
+    "I04",
+    "M12"
+   ]
+  },
+  {
+   "id": "I04",
+   "short": "Dreher 等 2009",
+   "topic": "I",
+   "difficulty": 3,
+   "year": 2009,
+   "venue": "Journal of Development Economics",
+   "note": "notes/I04-dreher.md",
+   "links": [
+    "I03",
+    "I06",
+    "I07",
+    "I08"
+   ]
+  },
+  {
+   "id": "I05",
+   "short": "Haftel & Thompson 2006",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 2006,
+   "venue": "Journal of Conflict Resolution",
+   "note": "notes/I05-haftel.md",
+   "links": [
+    "I02",
+    "I09",
+    "I11",
+    "S10"
+   ]
+  },
+  {
+   "id": "I06",
+   "short": "Blair 等 2021",
+   "topic": "I",
+   "difficulty": 2,
+   "year": 2022,
+   "venue": "British Journal of Political Science",
+   "note": "notes/I06-blair.md",
+   "links": [
+    "I04",
+    "I07",
+    "I08",
+    "I10"
+   ]
+  },
+  {
+   "id": "I07",
+   "short": "Abbott 等 2021",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 2021,
+   "venue": "The Review of International Organizations",
+   "note": "notes/I07-abbott.md",
+   "links": [
+    "I04",
+    "I06",
+    "I08",
+    "I10"
+   ]
+  },
+  {
+   "id": "I08",
+   "short": "Carnegie & Marinov 2017",
+   "topic": "I",
+   "difficulty": 3,
+   "year": 2017,
+   "venue": "American Journal of Political Science",
+   "note": "notes/I08-carnegie.md",
+   "links": [
+    "I04",
+    "I06",
+    "I07",
+    "I10"
+   ]
+  },
+  {
+   "id": "I09",
+   "short": "Tallberg 等 2020",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 2020,
+   "venue": "International Studies Quarterly",
+   "note": "notes/I09-tallberg.md",
+   "links": [
+    "F02",
+    "I02",
+    "I05",
+    "I11"
+   ]
+  },
+  {
+   "id": "I10",
+   "short": "Blair 等 2021b",
+   "topic": "I",
+   "difficulty": 2,
+   "year": 2021,
+   "venue": "World Politics",
+   "note": "notes/I10-blair.md",
+   "links": [
+    "I06",
+    "I07",
+    "I08",
+    "I12"
+   ]
+  },
+  {
+   "id": "I11",
+   "short": "Koremenos 等 2001",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 2001,
+   "venue": "International Organization",
+   "note": "notes/I11-koremenos.md",
+   "links": [
+    "I02",
+    "I05",
+    "I09",
+    "I12"
+   ]
+  },
+  {
+   "id": "I12",
+   "short": "Putnam 1988",
+   "topic": "I",
+   "difficulty": 1,
+   "year": 1988,
+   "venue": "International Organization",
+   "note": "notes/I12-putnam.md",
+   "links": [
+    "C08",
+    "I10",
+    "I11"
+   ]
+  },
+  {
+   "id": "N01",
+   "short": "Carvalho 等 2021",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2021,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/N01-carvalho.md",
+   "links": [
+    "N02",
+    "N03",
+    "N05",
+    "N06"
+   ]
+  },
+  {
+   "id": "N02",
+   "short": "Banerjee 等 2013",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2013,
+   "venue": "Science",
+   "note": "notes/N02-banerjee.md",
+   "links": [
+    "N01",
+    "N03",
+    "N05",
+    "N06"
+   ]
+  },
+  {
+   "id": "N03",
+   "short": "Boehm 等 2019",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2019,
+   "venue": "The Review of Economics and Statistics",
+   "note": "notes/N03-boehm.md",
+   "links": [
+    "N01",
+    "N02",
+    "N05",
+    "N08"
+   ]
+  },
+  {
+   "id": "N04",
+   "short": "Cranmer & Desmarais 2011",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2011,
+   "venue": "Political Analysis",
+   "note": "notes/N04-cranmer.md",
+   "links": [
+    "N07",
+    "N09",
+    "N10",
+    "N11"
+   ]
+  },
+  {
+   "id": "N05",
+   "short": "Elliott 等 2022",
+   "topic": "N",
+   "difficulty": 5,
+   "year": 2022,
+   "venue": "American Economic Review",
+   "note": "notes/N05-elliott.md",
+   "links": [
+    "N01",
+    "N02",
+    "N03",
+    "N08"
+   ]
+  },
+  {
+   "id": "N06",
+   "short": "Dorussen & Ward 2008",
+   "topic": "N",
+   "difficulty": 3,
+   "year": 2008,
+   "venue": "Journal of Conflict Resolution",
+   "note": "notes/N06-dorussen.md",
+   "links": [
+    "N01",
+    "N02",
+    "N08",
+    "S01"
+   ]
+  },
+  {
+   "id": "N07",
+   "short": "Maoz 等 2007",
+   "topic": "N",
+   "difficulty": 3,
+   "year": 2007,
+   "venue": "The Journal of Politics",
+   "note": "notes/N07-maoz.md",
+   "links": [
+    "N04",
+    "N09",
+    "N10",
+    "N11"
+   ]
+  },
+  {
+   "id": "N08",
+   "short": "Cederman 等 2009",
+   "topic": "N",
+   "difficulty": 3,
+   "year": 2009,
+   "venue": "World Politics",
+   "note": "notes/N08-cederman.md",
+   "links": [
+    "N03",
+    "N05",
+    "N06",
+    "S09"
+   ]
+  },
+  {
+   "id": "N09",
+   "short": "Cranmer 等 2012",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2012,
+   "venue": "Conflict Management and Peace Science",
+   "note": "notes/N09-cranmer.md",
+   "links": [
+    "N04",
+    "N07",
+    "N10",
+    "N11"
+   ]
+  },
+  {
+   "id": "N10",
+   "short": "Kinne 2013",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2013,
+   "venue": "American Political Science Review",
+   "note": "notes/N10-kinne.md",
+   "links": [
+    "F09",
+    "N04",
+    "N07",
+    "N09"
+   ]
+  },
+  {
+   "id": "N11",
+   "short": "Ward 等 2013",
+   "topic": "N",
+   "difficulty": 4,
+   "year": 2013,
+   "venue": "Network Science",
+   "note": "notes/N11-ward.md",
+   "links": [
+    "F09",
+    "N04",
+    "N07",
+    "N09"
+   ]
+  },
+  {
+   "id": "L01",
+   "short": "Dell 等 2014",
+   "topic": "L",
+   "difficulty": 1,
+   "year": 2014,
+   "venue": "Journal of Economic Literature",
+   "note": "notes/L01-dell.md",
+   "links": [
+    "L02",
+    "L06",
+    "L11"
+   ]
+  },
+  {
+   "id": "L02",
+   "short": "Hsiang 等 2013",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2013,
+   "venue": "Science",
+   "note": "notes/L02-hsiang.md",
+   "links": [
+    "L01",
+    "L06",
+    "L11"
+   ]
+  },
+  {
+   "id": "L03",
+   "short": "Dell 等 2012",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2012,
+   "venue": "American Economic Journal: Macroeconomics",
+   "note": "notes/L03-dell.md",
+   "links": [
+    "L04",
+    "L05",
+    "L06",
+    "L07"
+   ]
+  },
+  {
+   "id": "L04",
+   "short": "Barreca 等 2016",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2016,
+   "venue": "Journal of Political Economy",
+   "note": "notes/L04-barreca.md",
+   "links": [
+    "L03",
+    "L05",
+    "L07",
+    "L08"
+   ]
+  },
+  {
+   "id": "L05",
+   "short": "Deschenes & Greenstone 2011",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2011,
+   "venue": "American Economic Journal: Applied Economics",
+   "note": "notes/L05-deschenes.md",
+   "links": [
+    "L03",
+    "L04",
+    "L07",
+    "L08"
+   ]
+  },
+  {
+   "id": "L06",
+   "short": "Carleton 等 2022",
+   "topic": "L",
+   "difficulty": 5,
+   "year": 2022,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/L06-carleton.md",
+   "links": [
+    "G03",
+    "L01",
+    "L02",
+    "L03"
+   ]
+  },
+  {
+   "id": "L07",
+   "short": "Cattaneo & Peri 2016",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2016,
+   "venue": "Journal of Development Economics",
+   "note": "notes/L07-cattaneo.md",
+   "links": [
+    "L03",
+    "L04",
+    "L05",
+    "L10"
+   ]
+  },
+  {
+   "id": "L08",
+   "short": "Marchiori 等 2012",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2012,
+   "venue": "Journal of Environmental Economics and Management",
+   "note": "notes/L08-marchiori.md",
+   "links": [
+    "C06",
+    "L04",
+    "L05",
+    "L10"
+   ]
+  },
+  {
+   "id": "L09",
+   "short": "Bohra-Mishra 等 2014",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2014,
+   "venue": "Proceedings of the National Academy of Sciences",
+   "note": "notes/L09-bohra-mishra.md",
+   "links": [
+    "C05",
+    "C12",
+    "G13"
+   ]
+  },
+  {
+   "id": "L10",
+   "short": "Missirian & Schlenker 2017",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2017,
+   "venue": "Science",
+   "note": "notes/L10-missirian.md",
+   "links": [
+    "C06",
+    "I01",
+    "L07",
+    "L08"
+   ]
+  },
+  {
+   "id": "L11",
+   "short": "Couttenier & Soubeyran 2014",
+   "topic": "L",
+   "difficulty": 2,
+   "year": 2014,
+   "venue": "The Economic Journal",
+   "note": "notes/L11-couttenier.md",
+   "links": [
+    "C13",
+    "L01",
+    "L02",
+    "S04"
+   ]
+  },
+  {
+   "id": "F01",
+   "short": "Chernozhukov 等 2018",
+   "topic": "F",
+   "difficulty": 5,
+   "year": 2018,
+   "venue": "The Econometrics Journal",
+   "note": "notes/F01-chernozhukov.md",
+   "links": [
+    "F03",
+    "F05",
+    "F06",
+    "F08",
+    "F11"
+   ]
+  },
+  {
+   "id": "F02",
+   "short": "Grimmer & Stewart 2013",
+   "topic": "F",
+   "difficulty": 1,
+   "year": 2013,
+   "venue": "Political Analysis",
+   "note": "notes/F02-grimmer.md",
+   "links": [
+    "F09",
+    "I02",
+    "I09",
+    "S12"
+   ]
+  },
+  {
+   "id": "F03",
+   "short": "Wager & Athey 2018",
+   "topic": "F",
+   "difficulty": 5,
+   "year": 2018,
+   "venue": "Journal of the American Statistical Association",
+   "note": "notes/F03-wager.md",
+   "links": [
+    "F01",
+    "F04",
+    "F08",
+    "F12"
+   ]
+  },
+  {
+   "id": "F04",
+   "short": "Mullainathan & Spiess 2017",
+   "topic": "F",
+   "difficulty": 1,
+   "year": 2017,
+   "venue": "Journal of Economic Perspectives",
+   "note": "notes/F04-mullainathan.md",
+   "links": [
+    "F03",
+    "F06",
+    "M09",
+    "M10"
+   ]
+  },
+  {
+   "id": "F05",
+   "short": "Jean 等 2016",
+   "topic": "F",
+   "difficulty": 4,
+   "year": 2016,
+   "venue": "Science",
+   "note": "notes/F05-jean.md",
+   "links": [
+    "F01",
+    "F08",
+    "F10",
+    "F12"
+   ]
+  },
+  {
+   "id": "F06",
+   "short": "Athey & Imbens 2019",
+   "topic": "F",
+   "difficulty": 1,
+   "year": 2019,
+   "venue": "Annual Review of Economics",
+   "note": "notes/F06-athey.md",
+   "links": [
+    "F01",
+    "F04",
+    "M10"
+   ]
+  },
+  {
+   "id": "F07",
+   "short": "Chen & Nordhaus 2011",
+   "topic": "F",
+   "difficulty": 2,
+   "year": 2011,
+   "venue": "Proceedings of the National Academy of Sciences",
+   "note": "notes/F07-chen.md",
+   "links": [
+    "F11",
+    "F12",
+    "G01"
+   ]
+  },
+  {
+   "id": "F08",
+   "short": "Blumenstock 等 2015",
+   "topic": "F",
+   "difficulty": 4,
+   "year": 2015,
+   "venue": "Science",
+   "note": "notes/F08-blumenstock.md",
+   "links": [
+    "F01",
+    "F03",
+    "F05",
+    "F10"
+   ]
+  },
+  {
+   "id": "F09",
+   "short": "Wilkerson & Casas 2017",
+   "topic": "F",
+   "difficulty": 1,
+   "year": 2017,
+   "venue": "Annual Review of Political Science",
+   "note": "notes/F09-wilkerson.md",
+   "links": [
+    "F02",
+    "N10",
+    "N11"
+   ]
+  },
+  {
+   "id": "F10",
+   "short": "Aiken 等 2022",
+   "topic": "F",
+   "difficulty": 4,
+   "year": 2022,
+   "venue": "Nature",
+   "note": "notes/F10-aiken.md",
+   "links": [
+    "C04",
+    "F05",
+    "F08",
+    "G13"
+   ]
+  },
+  {
+   "id": "F11",
+   "short": "Ratledge 等 2022",
+   "topic": "F",
+   "difficulty": 5,
+   "year": 2022,
+   "venue": "Nature",
+   "note": "notes/F11-ratledge.md",
+   "links": [
+    "C09",
+    "F01",
+    "F07"
+   ]
+  },
+  {
+   "id": "F12",
+   "short": "Fiaschi 等 2026",
+   "topic": "F",
+   "difficulty": 5,
+   "year": 2026,
+   "venue": "arXiv 预印本",
+   "note": "notes/F12-fiaschi.md",
+   "links": [
+    "F03",
+    "F05",
+    "F07",
+    "G01"
+   ]
+  },
+  {
+   "id": "M01",
+   "short": "Callaway & Sant'Anna 2021",
+   "topic": "M",
+   "difficulty": 5,
+   "year": 2021,
+   "venue": "Journal of Econometrics",
+   "note": "notes/M01-callaway.md",
+   "links": [
+    "M02",
+    "M03",
+    "M04",
+    "M08"
+   ]
+  },
+  {
+   "id": "M02",
+   "short": "Goodman-Bacon 2021",
+   "topic": "M",
+   "difficulty": 5,
+   "year": 2021,
+   "venue": "Journal of Econometrics",
+   "note": "notes/M02-goodman-bacon.md",
+   "links": [
+    "M01",
+    "M03",
+    "M04",
+    "M08"
+   ]
+  },
+  {
+   "id": "M03",
+   "short": "Sun & Abraham 2021",
+   "topic": "M",
+   "difficulty": 5,
+   "year": 2021,
+   "venue": "Journal of Econometrics",
+   "note": "notes/M03-sun.md",
+   "links": [
+    "G11",
+    "M01",
+    "M02",
+    "M04"
+   ]
+  },
+  {
+   "id": "M04",
+   "short": "de Chaisemartin & D'Haultfoeuille 2020",
+   "topic": "M",
+   "difficulty": 5,
+   "year": 2020,
+   "venue": "American Economic Review",
+   "note": "notes/M04-de-chaisemartin.md",
+   "links": [
+    "M01",
+    "M02",
+    "M03",
+    "M09"
+   ]
+  },
+  {
+   "id": "M05",
+   "short": "Abadie 等 2010",
+   "topic": "M",
+   "difficulty": 3,
+   "year": 2010,
+   "venue": "Journal of the American Statistical Association",
+   "note": "notes/M05-abadie.md",
+   "links": [
+    "M06",
+    "M07",
+    "M11"
+   ]
+  },
+  {
+   "id": "M06",
+   "short": "Abadie & Gardeazabal 2003",
+   "topic": "M",
+   "difficulty": 3,
+   "year": 2003,
+   "venue": "American Economic Review",
+   "note": "notes/M06-abadie.md",
+   "links": [
+    "M05",
+    "M07",
+    "M11"
+   ]
+  },
+  {
+   "id": "M07",
+   "short": "Abadie 2021",
+   "topic": "M",
+   "difficulty": 1,
+   "year": 2021,
+   "venue": "Journal of Economic Literature",
+   "note": "notes/M07-abadie.md",
+   "links": [
+    "M05",
+    "M06",
+    "M11"
+   ]
+  },
+  {
+   "id": "M08",
+   "short": "Borusyak 等 2022",
+   "topic": "M",
+   "difficulty": 4,
+   "year": 2022,
+   "venue": "The Review of Economic Studies",
+   "note": "notes/M08-borusyak.md",
+   "links": [
+    "M01",
+    "M02",
+    "M09",
+    "M10"
+   ]
+  },
+  {
+   "id": "M09",
+   "short": "Adao 等 2019",
+   "topic": "M",
+   "difficulty": 5,
+   "year": 2019,
+   "venue": "The Quarterly Journal of Economics",
+   "note": "notes/M09-adao.md",
+   "links": [
+    "F04",
+    "M04",
+    "M08",
+    "M10"
+   ]
+  },
+  {
+   "id": "M10",
+   "short": "Cameron 等 2011",
+   "topic": "M",
+   "difficulty": 5,
+   "year": 2011,
+   "venue": "Journal of Business & Economic Statistics",
+   "note": "notes/M10-cameron.md",
+   "links": [
+    "F04",
+    "F06",
+    "M08",
+    "M09"
+   ]
+  },
+  {
+   "id": "M11",
+   "short": "King & Zeng 2001",
+   "topic": "M",
+   "difficulty": 2,
+   "year": 2001,
+   "venue": "Political Analysis",
+   "note": "notes/M11-king.md",
+   "links": [
+    "M05",
+    "M06",
+    "M07",
+    "M12"
+   ]
+  },
+  {
+   "id": "M12",
+   "short": "Collier & Hoeffler 2004",
+   "topic": "M",
+   "difficulty": 1,
+   "year": 2004,
+   "venue": "Oxford Economic Papers",
+   "note": "notes/M12-collier.md",
+   "links": [
+    "C01",
+    "I03",
+    "M11"
+   ]
+  }
+ ]
+}

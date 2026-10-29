@@ -1,0 +1,467 @@
+{
+  "generated": "2026-10-29",
+  "groups": [
+    {
+      "id": "A",
+      "name": "断点与边界",
+      "count": 5,
+      "file": "01-group-A-断点与边界.md"
+    },
+    {
+      "id": "B",
+      "name": "可达性与基础设施",
+      "count": 5,
+      "file": "02-group-B-可达性与基础设施.md"
+    },
+    {
+      "id": "C",
+      "name": "电力与能源设施",
+      "count": 3,
+      "file": "03-group-C-电力与能源设施.md"
+    },
+    {
+      "id": "D",
+      "name": "冲突、资源与网格",
+      "count": 4,
+      "file": "04-group-D-冲突资源与网格.md"
+    },
+    {
+      "id": "E",
+      "name": "网络与关系",
+      "count": 4,
+      "file": "05-group-E-网络与关系.md"
+    },
+    {
+      "id": "F",
+      "name": "测量、卫星与前沿",
+      "count": 5,
+      "file": "06-group-F-测量卫星与前沿.md"
+    }
+  ],
+  "papers": [
+    {
+      "id": "A1",
+      "short": "Dell 2010",
+      "group": "A",
+      "year": 2010,
+      "venue": "Econometrica",
+      "unit": "秘鲁县（distrito），并以经纬度计算到 Mita 边界的距离",
+      "design": "空间断点回归",
+      "data_kind": "混合",
+      "note": "notes/A1-dell.md",
+      "links": [
+        "A2",
+        "A3",
+        "A5"
+      ]
+    },
+    {
+      "id": "A2",
+      "short": "Michalopoulos & Papaioannou 2013",
+      "group": "A",
+      "year": 2013,
+      "venue": "Econometrica",
+      "unit": "族群家园多边形（ethnic homeland）与网格单元",
+      "design": "空间断点＋边界固定效应",
+      "data_kind": "混合",
+      "note": "notes/A2-michalopoulos.md",
+      "links": [
+        "A1",
+        "A3",
+        "A4"
+      ]
+    },
+    {
+      "id": "A3",
+      "short": "Michalopoulos & Papaioannou 2014",
+      "group": "A",
+      "year": 2014,
+      "venue": "Quarterly Journal of Economics",
+      "unit": "国界两侧二十五公里带宽内的网格单元",
+      "design": "跨国界空间断点",
+      "data_kind": "栅格",
+      "note": "notes/A3-michalopoulos.md",
+      "links": [
+        "A1",
+        "A2",
+        "F1"
+      ]
+    },
+    {
+      "id": "A4",
+      "short": "Burgess, Jedwab, Miguel, Morjaria & Padró i Miquel 2015",
+      "group": "A",
+      "year": 2015,
+      "venue": "American Economic Review",
+      "unit": "肯尼亚道路分段（road segment）与相邻选区",
+      "design": "双重差分",
+      "data_kind": "线",
+      "note": "notes/A4-burgess.md",
+      "links": [
+        "A2",
+        "B1",
+        "D4"
+      ]
+    },
+    {
+      "id": "A5",
+      "short": "Ahlfeldt, Redding, Sturm & Wolf 2015",
+      "group": "A",
+      "year": 2015,
+      "venue": "Econometrica",
+      "unit": "柏林地块（block）级微观地理单元",
+      "design": "空间断点＋结构模型",
+      "data_kind": "面",
+      "note": "notes/A5-ahlfeldt.md",
+      "links": [
+        "A1",
+        "B1",
+        "B5"
+      ]
+    },
+    {
+      "id": "B1",
+      "short": "Donaldson & Hornbeck 2016",
+      "group": "B",
+      "year": 2016,
+      "venue": "Quarterly Journal of Economics",
+      "unit": "美国县（county）",
+      "design": "市场准入＋结构模型",
+      "data_kind": "线",
+      "note": "notes/B1-donaldson.md",
+      "links": [
+        "A4",
+        "A5",
+        "B2",
+        "B4"
+      ]
+    },
+    {
+      "id": "B2",
+      "short": "Faber 2014",
+      "group": "B",
+      "year": 2014,
+      "venue": "Review of Economic Studies",
+      "unit": "中国县（county）",
+      "design": "双重差分＋工具变量",
+      "data_kind": "混合",
+      "note": "notes/B2-faber.md",
+      "links": [
+        "B1",
+        "B3",
+        "B5",
+        "C1"
+      ]
+    },
+    {
+      "id": "B3",
+      "short": "Asher & Novosad 2020",
+      "group": "B",
+      "year": 2020,
+      "venue": "American Economic Review",
+      "unit": "印度村庄（village）",
+      "design": "双重差分＋事件研究",
+      "data_kind": "点",
+      "note": "notes/B3-asher.md",
+      "links": [
+        "B2",
+        "B4",
+        "F4"
+      ]
+    },
+    {
+      "id": "B4",
+      "short": "Jedwab & Moradi 2016",
+      "group": "B",
+      "year": 2016,
+      "venue": "Review of Economics and Statistics",
+      "unit": "加纳的城镇与村落点位",
+      "design": "准外生路线的长期比较",
+      "data_kind": "点",
+      "note": "notes/B4-jedwab.md",
+      "links": [
+        "B1",
+        "B3",
+        "B5"
+      ]
+    },
+    {
+      "id": "B5",
+      "short": "Baum-Snow 2007",
+      "group": "B",
+      "year": 2007,
+      "venue": "Quarterly Journal of Economics",
+      "unit": "美国大都市统计区与其中心城",
+      "design": "工具变量",
+      "data_kind": "线",
+      "note": "notes/B5-baum-snow.md",
+      "links": [
+        "A5",
+        "B2",
+        "B4"
+      ]
+    },
+    {
+      "id": "C1",
+      "short": "Dinkelman 2011",
+      "group": "C",
+      "year": 2011,
+      "venue": "American Economic Review",
+      "unit": "南非农村社区（community）",
+      "design": "工具变量＋固定效应",
+      "data_kind": "点",
+      "note": "notes/C1-dinkelman.md",
+      "links": [
+        "B2",
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "id": "C2",
+      "short": "Lipscomb, Mobarak & Barham 2013",
+      "group": "C",
+      "year": 2013,
+      "venue": "American Economic Journal: Applied Economics",
+      "unit": "巴西自治市（municipality）",
+      "design": "工具变量",
+      "data_kind": "混合",
+      "note": "notes/C2-lipscomb.md",
+      "links": [
+        "C1",
+        "C3",
+        "D1"
+      ]
+    },
+    {
+      "id": "C3",
+      "short": "Ratledge, Cadamuro, de la Cuesta, Stigler & Burke 2022",
+      "group": "C",
+      "year": 2022,
+      "venue": "Nature",
+      "unit": "乌干达村庄",
+      "design": "双重稳健机器学习去偏",
+      "data_kind": "栅格",
+      "note": "notes/C3-ratledge.md",
+      "links": [
+        "C1",
+        "C2",
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "id": "D1",
+      "short": "Miguel, Satyanath & Sergenti 2004",
+      "group": "D",
+      "year": 2004,
+      "venue": "Journal of Political Economy",
+      "unit": "撒哈拉以南非洲国家—年",
+      "design": "面板工具变量",
+      "data_kind": "栅格",
+      "note": "notes/D1-miguel.md",
+      "links": [
+        "C2",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "id": "D2",
+      "short": "Berman, Couttenier, Rohner & Thoenig 2017",
+      "group": "D",
+      "year": 2017,
+      "venue": "American Economic Review",
+      "unit": "非洲零点五度网格单元—月",
+      "design": "三重差分",
+      "data_kind": "栅格",
+      "note": "notes/D2-berman.md",
+      "links": [
+        "D1",
+        "D3",
+        "D4"
+      ]
+    },
+    {
+      "id": "D3",
+      "short": "Tollefsen, Strand & Buhaug 2012",
+      "group": "D",
+      "year": 2012,
+      "venue": "Journal of Peace Research",
+      "unit": "全球零点五度经纬网格（约五十五公里见方）",
+      "design": "数据基础设施",
+      "data_kind": "栅格",
+      "note": "notes/D3-tollefsen.md",
+      "links": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "id": "D4",
+      "short": "Hodler & Raschky 2014",
+      "group": "D",
+      "year": 2014,
+      "venue": "Quarterly Journal of Economics",
+      "unit": "夜光栅格像素与族群聚居区",
+      "design": "三重差分＋多层固定效应",
+      "data_kind": "栅格",
+      "note": "notes/D4-hodler.md",
+      "links": [
+        "A4",
+        "D2",
+        "D3",
+        "F5"
+      ]
+    },
+    {
+      "id": "E1",
+      "short": "Cederman, Girardin & Gleditsch 2009",
+      "group": "E",
+      "year": 2009,
+      "venue": "World Politics",
+      "unit": "政府—族群—外部亲缘族群构成的三元组",
+      "design": "三元组逻辑斯蒂回归",
+      "data_kind": "关系边",
+      "note": "notes/E1-cederman.md",
+      "links": [
+        "E2",
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "id": "E2",
+      "short": "Ward, Ahlquist & Rozenas 2013",
+      "group": "E",
+      "year": 2013,
+      "venue": "Network Science",
+      "unit": "国家对—年",
+      "design": "动态潜在空间模型",
+      "data_kind": "关系边",
+      "note": "notes/E2-ward.md",
+      "links": [
+        "E1",
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "id": "E3",
+      "short": "Cranmer & Desmarais 2011",
+      "group": "E",
+      "year": 2011,
+      "venue": "Political Analysis",
+      "unit": "国际组织成员国之间的双边联系",
+      "design": "指数随机图模型",
+      "data_kind": "关系边",
+      "note": "notes/E3-cranmer.md",
+      "links": [
+        "E1",
+        "E2",
+        "E4"
+      ]
+    },
+    {
+      "id": "E4",
+      "short": "Banerjee, Chandrasekhar, Duflo & Jackson 2013",
+      "group": "E",
+      "year": 2013,
+      "venue": "Science",
+      "unit": "印度村庄内的家庭—家庭关系边",
+      "design": "网络中心性＋工具变量",
+      "data_kind": "关系边",
+      "note": "notes/E4-banerjee.md",
+      "links": [
+        "E1",
+        "E2",
+        "E3",
+        "F3"
+      ]
+    },
+    {
+      "id": "F1",
+      "short": "Henderson, Storeygard & Weil 2012",
+      "group": "F",
+      "year": 2012,
+      "venue": "American Economic Review",
+      "unit": "国家—年与次国家区域",
+      "design": "测量误差模型",
+      "data_kind": "栅格",
+      "note": "notes/F1-henderson.md",
+      "links": [
+        "A3",
+        "C3",
+        "F2",
+        "F3",
+        "F5"
+      ]
+    },
+    {
+      "id": "F2",
+      "short": "Jean, Burke, Xie, Davis, Lobell & Ermon 2016",
+      "group": "F",
+      "year": 2016,
+      "venue": "Science",
+      "unit": "非洲五国的小区域（约村级）",
+      "design": "两阶段迁移学习",
+      "data_kind": "栅格",
+      "note": "notes/F2-jean.md",
+      "links": [
+        "C3",
+        "F1",
+        "F3",
+        "F4"
+      ]
+    },
+    {
+      "id": "F3",
+      "short": "Aiken, Bellue, Karlan, Udry & Blumenstock 2022",
+      "group": "F",
+      "year": 2022,
+      "venue": "Nature",
+      "unit": "多哥的移动电话用户（个体）",
+      "design": "预测模型＋瞄准误差比较",
+      "data_kind": "混合",
+      "note": "notes/F3-aiken.md",
+      "links": [
+        "E4",
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "id": "F4",
+      "short": "Randhawa, Randhawa, Langer et al. 2026",
+      "group": "F",
+      "year": 2026,
+      "venue": "Nature Communications",
+      "unit": "九百万公里主干道的路段",
+      "design": "多尺度描述与相关分析",
+      "data_kind": "线",
+      "note": "notes/F4-randhawa.md",
+      "links": [
+        "B3",
+        "F2",
+        "F5"
+      ]
+    },
+    {
+      "id": "F5",
+      "short": "Fiaschi, Parenti & Ricci 2026",
+      "group": "F",
+      "year": 2026,
+      "venue": "arXiv 预印本",
+      "unit": "行政单元（不同聚合层级）",
+      "design": "反向回归分解",
+      "data_kind": "栅格",
+      "note": "notes/F5-fiaschi.md",
+      "links": [
+        "D4",
+        "F1",
+        "F4"
+      ]
+    }
+  ]
+}
