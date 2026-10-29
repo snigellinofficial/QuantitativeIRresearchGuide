@@ -123,7 +123,8 @@ def round_style(s, profile="textbook"):
         hard.append(("H2 破折号插入", "——", plain[max(0, m.start() - 20):m.start() + 20]))
 
     COUNT = ("部分", "半", "类", "项", "件", "点", "步", "条", "层", "个",
-         "方面", "章", "节", "如下", "以下", "形式")
+             "方面", "章", "节", "如下", "以下", "形式", "包括", "原意", "原文",
+             "概括", "表述", "写道", "分为", "共有", "问题", "理由是")
     for m in re.finditer("：([^。！？\\n]{15,})。", plain):
         pre = plain[max(0, m.start() - 14):m.start()]
         if any(w in pre for w in COUNT):
