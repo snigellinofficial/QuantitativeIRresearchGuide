@@ -1,5 +1,9 @@
 # QuantitativeIRresearchGuide
 
+**在线阅读**：https://snigellinofficial.github.io/QuantitativeIRresearchGuide/
+
+**发布页**：https://github.com/snigellinofficial/QuantitativeIRresearchGuide/releases/tag/v1.0.0
+
 面向初学者的国际政治量化研究读本。以一百篇顶刊文献为底本，讲解从相关到因果的方法阶梯，并逐段拆解十七篇代表性论文的行文与识别逻辑。
 
 ## 打开方式
